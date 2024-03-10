@@ -1,8 +1,9 @@
+// Tested by [Brandon Chikandiwa (z5495844) on 30/09/23]
 #include <stdio.h>
 
 void decipher(char letter1, char letter2, char letter3, char letter4) {
     int number1, number2, number3, number4;
-    printf("Enter the numbers to decipher by: ");
+    printf("Enter numbers to decipher by: ");
     scanf("%d %d %d %d", &number1, &number2, &number3, &number4);
 
     // Decryption for letter1
@@ -73,7 +74,7 @@ void decipher(char letter1, char letter2, char letter3, char letter4) {
 void encipher(char letter1, char letter2, char letter3, char letter4) {
 
     int number1, number2, number3, number4;
-    printf("Enter the numbers to encipher by: ");
+    printf("Enter numbers to encipher by: ");
     scanf("%d %d %d %d", &number1, &number2, &number3, &number4);
 
     // Encryption for letter1
@@ -150,7 +151,6 @@ int main(void) {
     printf("Would you like to encipher or decipher this message (e/d)? ");
     scanf(" %c", &choice);
 
-    printf("\n");
     if (choice == 'e') {
         encipher(letter1, letter2, letter3, letter4);
     } else if (choice == 'd') {

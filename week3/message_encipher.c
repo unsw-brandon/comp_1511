@@ -1,12 +1,14 @@
+// Tested by [Brandon Chikandiwa (z5495844) on 30/09/23]
+
 #include <stdio.h>
 
 int main() {
     char letter1, letter2, letter3, letter4;
     printf("Message: ");
-    scanf("%c %c %c %c", &letter1, &letter2, &letter3, &letter4);
-
+    scanf("%c%c%c%c", &letter1, &letter2, &letter3, &letter4);
+    
     int number1, number2, number3, number4;
-    printf("Enter the numbers to encipher by: ");
+    printf("Enter numbers to encipher by: ");
     scanf("%d %d %d %d", &number1, &number2, &number3, &number4);
 
     // Encryption for letter1
